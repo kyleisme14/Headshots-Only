@@ -1,18 +1,64 @@
-
-.grid {
-    width: 490px;
-    height: 490px;
-    display: flex;
-    flex-wrap: wrap;
+h1 {
+    text-align: center;
+}
+body {
+    background-color: rgba(127, 146, 255, 0.681);
 }
 
-.square {
-    height: 150px;
-    width: 150px;
-    border: solid black 5px;
-    margin: 1px;
+a {
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.scoreZone {
+    background-color: aquamarine;
+    width: 90%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.numbers {
+    margin-top: 10px;
+    font-size: large;
+    width: 15%;
+}
+
+.grid {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 4%;
+    align-items: center;
+}
+
+#backGround {
+    background-image: url(./img/Molshopen_in_weiland.jpg);
+    background-size: 100% 100%;
+}
+
+.square, .square1 {
+    height: 250px;
+    width: 30%;
+    border: dotted white 2.5px;
 }
 
 .mole {
-    background-color: blue;
+    background-image: url("./img/citybattle/barrelwmole.png");
+    background-size: 100% 100%;
 }
+
+.hole {
+    background-image: url("./img/citybattle/barrel.png");
+    background-size: 100% 100%;
+}
+
+.badguy {
+    background-color: red;
+} 
