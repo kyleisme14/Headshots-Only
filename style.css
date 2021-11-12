@@ -5,6 +5,14 @@ body {
     background-color: rgba(127, 146, 255, 0.681);
 }
 
+button {
+    color: black;
+    background-color: tomato;
+    font-size: larger;
+    width: 50%;
+    height: 200px;
+}
+
 a {
     text-align: center;
     color: white;
@@ -33,32 +41,81 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     grid-gap: 4%;
     align-items: center;
-}
+    }
 
 #backGround {
-    background-image: url(./img/Molshopen_in_weiland.jpg);
+    background-image: url(./img/citybattle/ghoulhallway.png);
     background-size: 100% 100%;
 }
 
-.square, .square1 {
+.square {
     height: 250px;
     width: 30%;
-    border: dotted white 2.5px;
+   margin-bottom: 1%;
 }
+
+.square1 {
+    height: 250px;
+    width: 30%;
+    margin-bottom: 1%;
+    } 
+
+.square2 {
+    height: 250px;
+    width: 30%;
+    margin-bottom: 1%;
+    }
+
 
 .mole {
-    background-image: url("./img/citybattle/barrelwmole.png");
-    background-size: 100% 100%;
+    background-image: url("./img/citybattle/ghost.png");
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+.mole1 {
+    background-image: url("./img/citybattle/ghost.png");
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mole2 {
+    background-image: url("./img/citybattle/ghost.png");
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .hole {
-    background-image: url("./img/citybattle/barrel.png");
-    background-size: 100% 100%;
+    /* background-image: url("./img/citybattle/barrel.png"); */
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
-.badguy {
-    background-color: red;
-} 
+.one {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.two {
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.three {
+    background-size: 10% 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.first {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
