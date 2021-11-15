@@ -1,16 +1,19 @@
 h1 {
     text-align: center;
+    color: white;
 }
 body {
-    background-color: rgba(127, 146, 255, 0.681);
+    background-color: rgba(0, 0, 0, 0.681);
 }
 
 button {
     color: black;
     background-color: tomato;
     font-size: larger;
-    width: 50%;
-    height: 200px;
+    margin: auto;
+    display: block;
+    width: 40%;
+    display: block;
 }
 
 a {
@@ -20,8 +23,8 @@ a {
     margin-right: auto;
 }
 .scoreZone {
-    background-color: aquamarine;
-    width: 90%;
+    background-color: rgba(246, 46, 46, 0.571);
+    width: 80%;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +40,8 @@ a {
 }
 
 .grid {
-    width: 90%;
+    width: 80%;
+    height: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -56,18 +60,24 @@ a {
     height: 250px;
     width: 30%;
    margin-bottom: 1%;
+   border: dotted grey 1px;
 }
 
 .square1 {
     height: 250px;
     width: 30%;
     margin-bottom: 1%;
+    border: dotted grey 1px;
+
     } 
 
 .square2 {
     height: 250px;
     width: 30%;
     margin-bottom: 1%;
+    border: dotted grey 1px;
+    text-align: center;
+
     }
 
 
@@ -76,19 +86,9 @@ a {
     background-size: 25% 25%;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
-.mole1 {
-    background-image: url("./img/citybattle/ghost.png");
-    background-size: 25% 25%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.mole2 {
-    background-image: url("./img/citybattle/ghost.png");
-    background-size: 25% 25%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 
 
 .hole {
@@ -100,22 +100,50 @@ a {
 }
 
 .one {
-    background-size: 100% 100%;
+    background-size: 75% 75%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: .7;
 }
 .two {
-    background-size: 50% 50%;
+    background-size: 55% 55%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: .5;
 }
 .three {
-    background-size: 10% 10%;
+    background-size: 40% 40%;
     background-repeat: no-repeat;
     background-position: center;
+    opacity: .3;
 }
 
 .first {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+
+
+/* //start button */
+
+         
+  #startBtn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

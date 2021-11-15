@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>whack-a-mole</title>
+    <title>Ghost-Fighter</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1> whack-a-mole</h1>
+    <h1> Ghost-Fighter</h1>
+
+<div id="myDiv" style="display: none;">
     <div class="scoreZone">
         <div class="numbers"></div>
         <div class="numbers">Your score:</div>
@@ -19,32 +21,51 @@
         <div class="numbers"></div>
     </div>
 
-    <div id="myDIV">
-        <!-- style="display: none;" -->
-        <!-- <button onclick="myFunction()">Start</button> -->
-   </div>
-
     <div class="grid" id="backGround">
-        <div class="square hole first" id="1"></div>
-        <div class="square hole" id="2"></div>
-        <div class="square2 hole" id="3"></div>
+        <div class="square hole first three" id="1"></div>
+        <div class="square hole three" id="2"></div>
+        <div class="square2 hole three" id="3"></div>
 
-        <div class="square1 hole first" id="2"></div>
-        <div class="square2 hole" id="2"></div>
-        <div class="square hole" id="2"></div>
+        <div class="square1 hole first two" id="2"></div>
+        <div class="square2 hole two" id="2">
+            <!-- <button id="MyDiv" onclick="myFunction()">Start</button> -->
+        </div>
+        <div class="square hole two" id="2"></div>
         
-        <div class="square2 hole first" id="3"></div>
-        <div class="square1 hole" id="3"></div>
-        <div class="square1 hole" id="3"></div>
+        <div class="square hole first one" id="3"></div>
+        <div class="square1 hole one" id="3"></div>
+        <div class="square1 hole one" id="3"></div>
 
-       
+    </div>
        </div>
 
         <div class="scoreZone">
-        </div>     
-    
+          
+            <audio controls autoplay>
+                <source src="./sounds/BetaMaxBed Bugz [12 Vinyl - VERILO00] - Rusko - A1 BetaMax.mp3" type="audio/mpeg">
+              </audio> 
+        </div> 
 
+    </div>   
+
+    <div id="startPage" style="display: block;">
+        
+        <img src="./img/haunted house.jpg">
+        <h1>Can you un-haunt this haunted house? <br> <br>Are you brave enough?<br> <br>(some ghosts take more hits to move)</h1>
+    
+        <button onclick="myFunction()"> START </button>
+    </div>
+
+    <div id="restartPage" style="display: none;">
+        <img src="./img/haunted house.jpg">
+        <h1 class="endScore">END!</h1>
+        <button onclick="myFunction()"> RE-START </button>
+    </div>
+    
+    <div style="position: absolute; bottom: 5px;">
     <a href="https://www.instagram.com/kyleismeme/">@kyleismeme</a>
+    </div>
+    
     <script src="./main.js"></script>
 </body>
 </html>
