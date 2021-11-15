@@ -17,30 +17,22 @@ let startPage = document.getElementById("startPage");
 let restartPage = document.getElementById("restartPage");
 
 
-//maybe instead of whack-a-mole pushing the mole to a random spot, instead
-//it like either is down or up?
 
-
-
-
-
-
-// top row
+// first set
 function randomSquare() {         // creating a whack a mole situation
     squares.forEach(square => { //for each square in squares
         square.classList.remove('mole') // remove mole from class name
         square.classList.add('hole')
     })
 
-    let randomSquare = squares[Math.floor(Math.random() * 4)] // randomly select square with math
-    console.log(randomSquare)
+    let randomSquare = squares[Math.floor(Math.random() * 4)] // randomly select square 
 
     randomSquare.classList.add("mole") // add mole to class  
     randomSquare.classList.remove('hole')
     hitPosition = randomSquare.id  // var = the mole location
 }
 // 
-//second row
+//second set
 function randomSquare1() {         // creating a whack a mole situation for bottom line
     squares1.forEach(square1 => { //for each square in squares1
         square1.classList.remove('mole') // remove mole from class name
@@ -48,12 +40,13 @@ function randomSquare1() {         // creating a whack a mole situation for bott
     })
 
     let randomSquare1 = squares1[Math.floor(Math.random() * 3)] // randomly select square with math
-    console.log(randomSquare1)
+    // console.log(randomSquare1)
     randomSquare1.classList.add("mole") // add mole to class
     randomSquare1.classList.remove("hole")
 
     hitPosition1 = randomSquare1.id  // var = the mole location
 }
+// third set
 function randomSquare2() {         // creating a whack a mole situation for bottom line
     squares2.forEach(square1 => { //for each square in squares1
         square1.classList.remove('mole') // remove mole from class name
@@ -61,7 +54,7 @@ function randomSquare2() {         // creating a whack a mole situation for bott
     })
 
     let randomSquare2 = squares2[Math.floor(Math.random() * 2)] // randomly select square with math
-    console.log(randomSquare1)
+    // console.log(randomSquare1)
     randomSquare2.classList.add("mole") // add mole to class
     randomSquare2.classList.remove("hole")
 
@@ -102,8 +95,6 @@ squares2.forEach(square2 => {
     })
 })
 
-
-
 // // function for the 'mole' to move
 // function moveMole(){
 //      timerId  = setInterval(randomSquare, 1000);
@@ -126,13 +117,8 @@ function countDown(){
     }
 }
 
-function restart(){
-    // when time = 0
-    // give prompt
-    // score
-    // offer to restart
-}
 
+let countDownTimerId;
 
 
 // /// hide and reveal start?
@@ -140,8 +126,9 @@ function myFunction() {
     startPage.style.display = "none";
     restartPage.style.display = "none";
     startButton.style.display = "block";
-        console.log('playing')
-        let countDownTimerId = setInterval(countDown, 1000)
+        // console.log('playing')
+        let currentTime = 30;
+        countDownTierId = setInterval(countDown, 1000)
 
     //start game
     randomSquare();
