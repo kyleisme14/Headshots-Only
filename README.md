@@ -7,6 +7,19 @@ An in-browser FPS game
 Instructions: 
 Click on the ghosts to make the dissapear and score points!  
 
+- clone my repo
+- open index.html
+
+
+<img width="912" alt="Screen Shot 2022-01-13 at 3 48 34 PM" src="https://user-images.githubusercontent.com/27470736/149426828-1f0ce2bd-ecc6-4fdf-bf71-8d361f99e768.png">
+<img width="1218" alt="Screen Shot 2022-01-13 at 3 48 11 PM" src="https://user-images.githubusercontent.com/27470736/149426833-622ba306-1445-4540-affd-e129860ea019.png">
+
+
+
+
+
+# Process
+
 Motivation:
 This game is a code bootcamp practice excersize to complete Unit-1. I was able to apply many of the new skills I've learned including html, css, javascript. I was able to create start buttons, keep time and score and have fun! I feel much more comfortable with github and developing ideas.  
 
